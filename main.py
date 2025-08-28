@@ -1,7 +1,8 @@
 import requests 
 
 if __name__ == "__main__":
-    url = "https://dog.ceo/api/breeds/image/random"
+    breed = "husky"
+    url = f"https://dog.ceo/api/breed/{breed}/images/random"
     
     try:
         response = requests.get(url)
